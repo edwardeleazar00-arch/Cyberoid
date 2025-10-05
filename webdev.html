@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"s>
+<title>My profile</title>
+<style>
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+color: #333;
+transition: all 0.3 ease; 
+}
+
+body.dark-mode {
+background-color: #222;
+color: #f4f4f4;
+}
+
+header {
+background: #35424a;
+color: white;
+padding: 1rem;
+text-align: center;
+}
+
+main{
+flex-direction:column;
+}
+
+.center{
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.profile {
+text-align: center;
+padding: 2rem;
+}
+
+
+
+#profile-pic {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid #35424a;
+margin-left:calc(50% - 75px);
+}
+
+.skills {
+background: #e2e2e2;
+padding: 1rem;
+margin: 1rem;
+border-radius: 5px;
+}
+
+body.dark-mode .skills {
+background: #444;
+}
+
+
+button {
+padding: 0.5rem 1rem;
+background: #35424a;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer
+}
+ 
+button.hover {
+background: #4e6575;
+}
+
+footer {
+text-align: center;
+padding: 1rem;
+background-color: #35424a;
+color: white
+}
+
+body.dark-mode footer {
+background: #111
+}
+
+
+.card{
+margin:1rem;
+border-radius:8px;
+padding:1rem;
+margin-top:5rem;
+}
+</style>
+</head>
+
+<body>
+
+<header class="center">
+<h1>Welcome to My Profile</h1>
+</header>
+
+<main class="center">
+
+<section class="profile">
+<img src="profile-pic.jpg" alt="Profile Picture" id="profile-pic">
+<h2 id="name">EL ZO</h2>
+<p id="title">Web Developer</p>
+<p id="bio">I Like creating beautiful, functional websites.</p>
+<button id="theme-btn'>Toggle Dark Mode</button>
+</section>
+
+<section class="skills">
+<h3>My Skills</h3>
+<ul id="skills-list">
+<li>HTML</li>
+<li>CSS</li>
+<li>javascript</li>
+</ul>
+</section>
+<p>
+Contact me at: 
+<style>
+  .icons { display:flex; gap:12px; align-items:center; }
+  .icons a { display:inline-block; width:36px; height:36px; text-decoration:none; }
+  .icons svg { width:100%; height:100%; display:block; }
+</style>
+
+<div class="icons" role="navigation" aria-label="Social media links">
+  <a href="https://facebook.com/Eleazar Edward" target="_blank" rel="noopener" aria-label="Facebook">
+    <!-- small facebook SVG -->
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.5 9.9v-7h-2.6V12h2.6V9.7c0-2.6 1.5-4 3.8-4 1.1 0 2.3.2 2.3.2v2.6h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.8l-.4 2.9h-2.4v7C18.3 21.1 22 17 22 12z"/></svg>
+  </a>
+
+  <a href="https://twitter.com/eleazaredward" target="_blank" rel="noopener" aria-label="Twitter">
+    <!-- small twitter SVG -->
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.9c-.6.3-1.2.5-1.9.6.7-.4 1.2-1.1 1.4-1.9-.7.4-1.5.7-2.4.9C18.2 4.4 17 4 15.7 4c-2.3 0-4.1 1.9-4.1 4.1 0 .3 0 .6.1.9C7.7 9 4.1 7.1 1.9 4.1c-.4.7-.6 1.5-.6 2.4 0 1.6.8 3 2 3.8-.6 0-1.2-.2-1.8-.5v.1c0 2.1 1.5 3.8 3.5 4.2-.3.1-.7.1-1 .1-.3 0-.6 0-.8-.1.6 1.9 2.4 3.2 4.6 3.2C8.9 19 6.6 19.8 4.1 19.8c-.3 0-.6 0-.9-.1C6 21.1 8.3 22 10.9 22c7 0 10.8-5.8 10.8-10.8v-.5c.8-.6 1.4-1.4 1.9-2.3-.7.3-1.4.5-2.2.6z"/></svg>
+  </a>
+
+  <a href="https://instagram.com/eleazaredward" target="_blank" rel="noopener" aria-label="Instagram">
+    <!-- instagram SVG (simplified) -->
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.1A4.9 4.9 0 1 0 16.9 13 4.9 4.9 0 0 0 12 8.1zM18.4 6.2a1.2 1.2 0 1 1-1.2-1.2 1.2 1.2 0 0 1 1.2 1.2z"/></svg>
+  </a>
+
+  <a href="mailto:edwardeleazar00@gmail.com" aria-label="Email">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+  </a>
+  
+  <!-- WhatsApp -->
+  <a href="https://wa.me/+2349135667655" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path  d="M16.7 14.5c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2-1.3-.7-.7-1.3-1.6-1.4-1.9-.1-.3 0-.4.1-.6.1-.1.3-.3.4-.4.1-.1.2-.3.3-.4.1-.1.1-.2.2-.4.1-.2 0-.3 0-.4s-.7-1.8-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.4.1-.5.2-.2.2-.6.5-.6 1.3s.6 1.5.7 1.7c.1.2 1.2 2.4 3 3.4 1.8 1 1.8.7 2.1.6.3-.1 1-.4 1.1-.8.1-.4.1-.7.1-.8s-.1-.1-.3-.2zM12 2C6.5 2 2 6.5 2 12c0 2 .6 3.9 1.7 5.5L2 22l4.7-1.7A9.9 9.9 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
+    </svg>
+  </a>
+
+  <!-- Telegram -->
+  <a href="https://t.me/eleazaredward" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.6 7.4l-1.4 6.6c-.1.5-.5.6-.9.4l-2.6-1.9-1.2 1.2c-.1.1-.2.2-.4.2l.1-2.6 4.8-4.3c.2-.1 0-.2-.3 0L8.6 13l-2.5-.8c-.5-.1-.5-.5.1-.8l9.9-3.8c.4-.2.8.1.5.8z"/>
+    </svg>
+  </a>
+</div>
+
+
+</a>
+</p>
+</main>
+
+
+<footer></footer>
+
+</body>
+</html>
